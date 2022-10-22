@@ -1,0 +1,125 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+body {
+    background-color: #dcdcdc;
+}
+
+::placeholder {
+    color: darkgreen;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-texto {
+    font-size: 1rem;
+    background: #dcdcdc;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    margin: 40px 5% 0 5%;
+}
+
+.texto {
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    font-family: Inter;
+    margin: 15px 10% 30px 10%;
+}
+
+.mensaje {
+    width: 80%;
+    border-radius: .5rem;
+    border: none;
+    background-image: url("../imagenes/Decifraelmensaje.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140%;
+    box-shadow: -1px 5px 30px 5px #008000;
+    position: relative;
+    margin: 0 10% 0 10%;
+}
+
+.boton__copiar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.encriptar,
+.desencriptar,
+.copiar {
+    background-color: #008000;
+    color: white;
+    border-radius: .6rem;
+    border: none;
+    padding: .5rem;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.informacion {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*Aqui comienza el responsive*/
+
+@media screen and (min-width: 375px) {
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mensaje {
+        background-size: 110%;
+        width: 60%;
+        margin: 0 20% 0 20%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+
+    .input-texto {
+        margin: 40px 5% 15% 5%;
+    }
+
+    .encriptar,
+    .desencriptar,
+    .copiar {
+        padding: .375rem;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .informacion {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mensaje {
+        background-size: 130%;
+    }
+}
